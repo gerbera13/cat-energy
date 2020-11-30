@@ -3,54 +3,64 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="header">
-  <div class="header__nav">
+<div class="wrap">
+  <div class="nav">
+    <div class="nav__header">
     <span class="nav__logo">
       <img src="https://via.placeholder.com/33x37" alt="cat">
     </span>
-    <span class="nav__title">CAT ENERGY</span>
-    <div class="nav__burger">
-      <div class="nav__burger-line"></div>
-      <div class="nav__burger-line"></div>
-      <div class="nav__burger-line"></div>
+      <span class="nav__title"><b>CAT</b> ENERGY</span>
+      <div class="nav__burger">
+        <div class="nav__burger-line"></div>
+        <div class="nav__burger-line"></div>
+        <div class="nav__burger-line"></div>
+      </div>
     </div>
   </div>
 </div>
-<div class="PROMO">
-  <h1 class="PROMO__box">ФУНКЦИОНАЛЬНОЕ ПИТАНИЕ ДЛЯ КОТОВ</h1>
-  <p>ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
-  <div class="PROMO__box">
-    <img src="https://via.placeholder.com/280x270" alt="food">
+<div class="promo">
+  <div class="promo__container">
+    <div class="promo__green">
+      <h1 class="promo__title">
+        Функциональное питание для котов
+      </h1>
+      <p>ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
+    </div>
+    <div class="promo__box">
+      <img
+        src="https://s3-alpha-sig.figma.com/img/ca1b/fee4/d4c0fe600dd690a42aaf623045ebe148?Expires=1607299200&Signature=JrUH0JRY7xTZ5tTvJxa6i7uLCwrGWxtpfssZ09m5~3f97owpytCllXukyxG8BVFIXWg-HdN7RSqnecRUqxRUYSZ2smwLKLxK9RXfDzsrJ9GbVKxcI9E6s9CYgInMHlSLE9bAkNmlGNuMvDmz5iKRa4Bqh66jmr2~61vbCf12Vjl93T9b0gJyqb5i4oJRVppAPQbDj7lGi2~ksAgL0PJXdCgsbK5cUzvAYZgzMYjCmgNFL7gEFpjxj~UJPENk-DamGfSa6f3oMDvuioN0Fr7ZbZHnGaMi92KkKGJPUGXn6lT~v5973feQjJv0WFKaOpXOPpkw9VBi7G4fFnUUNYxTRw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+        alt="food">
+    </div>
   </div>
-  <a href="#" class="PROMO__title">
-    <h4>ПОДОБРАТЬ ПРОГРАММУ</h4>
+  <a href="#" class="promo__text">
+    ПОДОБРАТЬ ПРОГРАММУ
   </a>
 </div>
 <div class="selection">
   <div class="selection__box">
-    <div class="selection__cat-slim">
+    <div class="selection__cat">
       <img src="https://via.placeholder.com/50x50" alt="cat">
+      <h3>ПОХУДЕНИЕ</h3>
     </div>
-    <h3>ПОХУДЕНИЕ</h3>
     <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+    <div><a href="#" class="selection__title">КАТАЛОГ SLIM<span>&#10141;</span></a></div>
   </div>
-  <a href="#" class="selection__title">КАТАЛОГ SLIM<span>&#10141;</span></a>
   <div class="selection__box">
-    <div class="selection__cat-pro">
+    <div class="selection__cat">
       <img src="https://via.placeholder.com/50x50" alt="cat">
+      <h3>НАБОР МАССЫ</h3>
     </div>
-    <h3>НАБОР МАССЫ</h3>
     <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+    <div><a href="#" class="selection__title">КАТАЛОГ PRO<span>&#10141;</span></a></div>
   </div>
-  <a href="#" class="selection__title">КАТАЛОГ PRO<span>&#10141;</span></a>
 </div>
 <div class="special">
   <h2 class="special__title">Как это работает</h2>
   <div class="special__list">
-    <div class="special__icon">
+    <div class="special__item">
       <img src="https://via.placeholder.com/60x60" alt="leaf">
       <p>
         Функциональное питание
@@ -58,31 +68,32 @@
         питательные вещества.
       </p>
     </div>
-    <div class="special__icon">
+    <div class="special__item">
       <img src="https://via.placeholder.com/60x60" alt="
 pan">
+      <p class="special__text">
+        Выпускается в виде порошка,
+        который нужно лишь залить
+        кипятком и готово.
+      </p>
     </div>
-    <p class="special__text">
-      Выпускается в виде порошка,
-      который нужно лишь залить
-      кипятком и готово.
-    </p>
-    <div class="special__icon">
+    <div class="special__item">
       <img src="https://via.placeholder.com/60x60" alt="
 cutlery">
+      <p class="special__text">
+        Замените один-два приема
+        обычной еды на наше
+        функциональное питание.
+      </p>
     </div>
-    <p class="special__text">
-      Замените один-два приема
-      обычной еды на наше
-      функциональное питание.
-    </p>
-    <div class="special__icon">
+
+    <div class="special__item">
       <img src="https://via.placeholder.com/60x60" alt="
 weigher">
+      <p class="special__text">
+        Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+      </p>
     </div>
-    <p class="special__text">
-      Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-    </p>
   </div>
 </div>
 <section class="example">
@@ -94,19 +105,22 @@ weigher">
     по-прежнему спит по 16 часов в день.
   </p>
   <section class="example__box">
-    <h3>5 КГ</h3>
-    <p>снижение веса</p>
+    <div class="example__weight">
+      <h3>5 КГ</h3>
+      <p>снижение веса</p>
+    </div>
+    <div class="example__weight">
+      <h3>60 ДНЕЙ</h3>
+      <p>затрачено времени</p>
+    </div>
   </section>
-  <section class="example__box">
-    <h3>60 ДНЕЙ</h3>
-    <p>затрачено времени</p>
-  </section>
-
   <h4>ЗАТРАТЫ НА ПИТАНИЕ: 15000 РУБ.</h4>
-  <div><img src="https://via.placeholder.com/311x232" alt="cat"></div>
-  <div>
+  <div><img src="img/fat.png" alt="cat"></div>
+  <div >
     <div>БЫЛО</div>
-    <div><img src="https://via.placeholder.com/84x14" alt="line"></div>
+    <div><img src="https://via.placeholder.com/84x14" alt="line">
+      <div><img src="https://via.placeholder.com/35x6" alt="lin"></div>
+    </div>
     <div>СТАЛО</div>
   </div>
 </section>
@@ -124,9 +138,15 @@ weigher">
 <div class="footer">
   <div class="footer__title"><b>CAT</b> ENERGY</div>
   <ul class="footer__social">
-    <li><a href="https://vk.com/htmlacademy"><svg aria-label="Вконтакте"></svg></a></li>
-    <li><a href="https://www.instagram.com/htmlacademy/"><svg aria-label="Инстаграм"></svg></a></li>
-    <li><a href="https://www.facebook.com/htmlacademy"><svg aria-label="Фейсбук"></svg></a></li>
+    <li><a href="https://vk.com/htmlacademy">
+      <svg aria-label="Вконтакте"></svg>
+    </a></li>
+    <li><a href="https://www.instagram.com/htmlacademy/">
+      <svg aria-label="Инстаграм"></svg>
+    </a></li>
+    <li><a href="https://www.facebook.com/htmlacademy">
+      <svg aria-label="Фейсбук"></svg>
+    </a></li>
   </ul>
   <div>
     <div>HTML Academy</div>
