@@ -1,0 +1,39 @@
+@padding: 20px;
+
+.owner {
+  padding: 0 0 0 20px;
+
+  h2 {
+    font-size: 24px;
+    padding-right: @padding;
+  }
+
+  &__title div {
+    display: flex;
+    align-items: center;
+
+    div:nth-child(2) {
+      border-top: 2px solid rgba(104, 183, 56, 1);
+      margin-top: -25px;
+      width: 99px;
+    }
+
+    span {
+      padding-left: 12px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    font-size: 16px;
+    padding-right: @padding;
+
+    p:nth-child(2) {
+      text-transform: uppercase;
+      border: 1px solid lightgrey;
+      margin-left: 12px;
+      padding: 13px 0 15px 15px;
+      flex-grow: 1;
+    }
+  }
+}
