@@ -1,44 +1,22 @@
+@margin: 0;
+
 .title {
   font-family: "Oswald", sans-serif;
   padding: 27px 0 10px 20px;
-  margin: 0;
-  border-top: 1px solid rgba(217, 217, 217, 1);
-  border-bottom: 1px solid rgba(217, 217, 217, 1);
+  margin: @margin;
 
-  &__text {
+  .title__description {
+    text-transform: uppercase;
+    margin: @margin;
+    padding-bottom: 39px;
+    font-size: 14px;
+  }
+
+  .title__text {
     h1 {
       font-size: 36px;
-      margin: 0;
+      margin: @margin;
       padding-bottom: 37px;
     }
   }
-
-  &__description {
-    text-transform: uppercase;
-    margin: 0;
-    padding-bottom: 39px;
-  }
-
-  &__list {
-    text-transform: uppercase;
-    padding: 0 20px 0 20px;
-  }
-
-  &__list-item {
-    margin-bottom: 14px;
-    display: flex;
-    margin-top: 20px;
-
-    input {
-      border: 1px solid rgba(231, 231, 231, 1);
-      padding: 13px 15px;
-      width: 100%;
-    }
-
-    label {
-      margin-right: 13px;
-      white-space: nowrap;
-    }
-  }
 }
-

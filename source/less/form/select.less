@@ -1,7 +1,7 @@
 .select {
   font-size: 16px;
 
-  &__list {
+  .select__list {
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     padding: 0;
@@ -11,7 +11,7 @@
     }
   }
 
-  &__radio {
+  .select__radio {
     position: relative;
     display: flex;
     padding: 22px 20px;
@@ -21,12 +21,12 @@
       position: absolute;
     }
 
-    input:checked + &-circle &-inside {
+    input:checked + .select__radio-circle .select__radio-inside {
       visibility: visible;
     }
   }
 
-  &__radio-circle {
+  .select__radio-circle {
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 50%;
     width: 30px;
@@ -37,7 +37,7 @@
     margin-right: 15px;
   }
 
-  &__radio-inside {
+  .select__radio-inside {
     visibility: hidden;
     background-color: green;
     border-radius: 50%;

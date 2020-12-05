@@ -8,32 +8,45 @@
     padding-right: @padding;
   }
 
-  &__title div {
-    display: flex;
-    align-items: center;
+  .owner__title {
+    .owner__holder {
+      display: flex;
+      align-items: center;
 
-    div:nth-child(2) {
-      border-top: 2px solid rgba(104, 183, 56, 1);
-      margin-top: -25px;
-      width: 99px;
-    }
-
-    span {
-      padding-left: 12px;
+      .owner__line {
+        border-top: 2px solid rgba(104, 183, 56, 1);
+        margin-top: -25px;
+        width: 99px;
+      }
     }
   }
 
-  &__contact {
+  .owner__contact {
     display: flex;
     font-size: 16px;
-    padding-right: @padding;
+    margin-right: 20px;
+    white-space: nowrap;
+    position: relative;
+    padding-bottom: 14px;
+    width: 100%;
 
-    p:nth-child(2) {
+
+    .owner__number {
       text-transform: uppercase;
       border: 1px solid lightgrey;
-      margin-left: 12px;
-      padding: 13px 0 15px 15px;
+      padding: 10px 10px;
       flex-grow: 1;
+      font-size: 16px;
+      margin-left: 12px;
+      font-family: "Oswald", sans-serif;
+      margin-right: 20px;
+    }
+
+    .owner__icon {
+      position: absolute;
+      right: 35px;
+      top: 12px;
     }
   }
 }
+
