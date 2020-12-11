@@ -1,0 +1,55 @@
+.show {
+  width: 320px;
+  text-align: center;
+}
+
+
+.show__wrap {
+  @width: 30px;
+  @border: 2px solid lightgrey;
+  box-sizing: border-box;
+  padding: 0 20px 25px;
+  border-bottom: 1px solid lightgrey;
+
+  .show__line {
+    border-top: @border;
+    width: @width;
+    margin-top: 40px;
+    margin-left: 127px;
+  }
+
+  .show__line1 {
+    border-right: @border;
+    width: @width;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: 112px;
+  }
+
+  .show__aside {
+    p {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 23px 0 8px;
+    }
+
+    span {
+      font-size: 12px;
+      font-family: "Arial", sans-serif;
+      color: rgba(68, 68, 68, 1);
+    }
+  }
+
+  .show__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 8px;
+
+    button {
+      color: black;
+    }
+  }
+}
