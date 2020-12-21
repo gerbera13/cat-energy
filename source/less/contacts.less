@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 28px 19px 28px 19px;
+  padding: 28px 14px 28px 19px;
 }
 
 .contacts__welcome {
@@ -28,5 +28,17 @@
 
   img {
     margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__welcome {
+    font-size: 20px;
+  }
+
+  .contacts address {
+    width: auto;
+    justify-content: space-between;
+    font-size: 16px;
   }
 }
