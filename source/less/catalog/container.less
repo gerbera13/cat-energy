@@ -3,8 +3,7 @@
 
 
 .container__list {
-  margin: 0;
-  width: 320px;
+  margin: 0 auto;
   list-style: @style;
   padding: 0;
 
@@ -40,8 +39,9 @@
     }
 
     table {
-      font-family: "Arial", sans-serif;
-      font-size: 12px;
+      font-size: var(--font-size);
+      font-family: var(--font-family);
+      color: rgba(68, 68, 68, 1);
       width: 100%;
 
       td:first-child {

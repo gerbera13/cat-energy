@@ -1,17 +1,25 @@
 .selection {
-  width: 280px;
-  margin: auto 20px 20px;
-
   .selection__cat {
-    display: flex;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "image aside" "text text";
 
-    img {
+
+    .image {
+      grid-area: image;
       margin: 24px 19px 22px 22px;
+      width: 50px;
     }
 
-    h3 {
+    .aside {
+      grid-area: aside;
       font-size: 24px;
       margin-top: 30px;
+    }
+
+    .text {
+      grid-area: text;
     }
   }
 
@@ -26,11 +34,93 @@
       border-bottom: 1px solid rgba(217, 217, 217, 1);
       margin: 0 20px 0 20px;
     }
-  }
 
-  .selection__title {
-    padding: 19px 0 22px 19px;
-    text-decoration: none;
-    display: inline-block;
+    .selection__title {
+      padding: 19px 0 22px 50px;
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .selection {
+    .selection__title {
+      font-size: 20px;
+      padding-left: 50px;
+    }
+
+    .selection__cat {
+      padding-left: 50px;
+      grid-template-columns: 1fr 280px;
+      grid-template-rows: 150px 85px;
+      grid-template-areas:
+        "aside image"
+        "text image";
+
+      .text p {
+        margin: 0;
+        border: none;
+        align-self: center;
+        padding: 0;
+        font-size: 16px;
+      }
+
+      .image {
+        margin-top: 50px;
+        width: auto;
+      }
+
+      .aside {
+        font-size: 36px;
+        margin-top: 50px;
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .selection__all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    .selection__box {
+      .selection__cat {
+        padding-left: 50px;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: "image aside""text text";
+
+        .image {
+          height: 100px;
+          width: 100px;
+        }
+
+        .aside {
+          padding-left: 50px;
+          margin-top: 70px;
+        }
+
+        .text p {
+          padding-top: 70px;
+          padding-left: 25px;
+          padding-right: 50px;
+        }
+      }
+
+      .selection__title {
+        padding-left: 73px;
+      }
+    }
+
+    .selection__box:not(:first-child) {
+      margin-left: 80px;
+    }
   }
 }

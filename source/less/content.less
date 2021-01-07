@@ -7,8 +7,8 @@
 body {
   background-color: white;
   font-family: "Oswald", sans-serif;
-  width: 320px;
   margin: 0;
+  min-width: 320px;
 }
 
 @font-face {
@@ -21,4 +21,30 @@ body {
   font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff") format("woff");
   font-weight: normal;
+}
+
+:root {
+  --font-size: 12px;
+  --font-family: "Arial", sans-serif;
+}
+
+@desktop: 1440px;
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    width: 728px;
+  }
+}*/
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    width: 1200px;
+  }
 }
