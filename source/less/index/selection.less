@@ -1,49 +1,45 @@
 .selection {
-  margin: auto 20px 20px;
-
-}
-
-.selection__cat {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "image aside" "text text";
+  .selection__cat {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "image aside" "text text";
 
 
-  .image {
-    grid-area: image;
-    margin: 24px 19px 22px 22px;
-    width: 50px;
+    .image {
+      grid-area: image;
+      margin: 24px 19px 22px 22px;
+      width: 50px;
+    }
+
+    .aside {
+      grid-area: aside;
+      font-size: 24px;
+      margin-top: 30px;
+    }
+
+    .text {
+      grid-area: text;
+    }
   }
 
-  .aside {
-    grid-area: aside;
-    font-size: 24px;
-    margin-top: 30px;
-  }
+  .selection__box {
+    margin-bottom: 20px;
+    background-color: rgba(242, 242, 242, 1);
 
-  .text {
-    grid-area: text;
+    p {
+      font-family: "Arial", sans-serif;
+      padding: 0 13px 23px 0;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(217, 217, 217, 1);
+      margin: 0 20px 0 20px;
+    }
 
-  }
-}
-
-.selection__box {
-  margin-bottom: 20px;
-  background-color: rgba(242, 242, 242, 1);
-
-  p {
-    font-family: "Arial", sans-serif;
-    padding: 0 13px 23px 0;
-    font-size: 14px;
-    border-bottom: 1px solid rgba(217, 217, 217, 1);
-    margin: 0 20px 0 20px;
-  }
-
-  .selection__title {
-    padding: 19px 0 22px 19px;
-    text-decoration: none;
-    display: inline-block;
+    .selection__title {
+      padding: 19px 0 22px 50px;
+      text-decoration: none;
+      display: inline-block;
+    }
   }
 }
 
@@ -81,6 +77,50 @@
         margin-top: 50px;
         margin-bottom: 14px;
       }
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .selection__all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    .selection__box {
+      .selection__cat {
+        padding-left: 50px;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: "image aside""text text";
+
+        .image {
+          height: 100px;
+          width: 100px;
+        }
+
+        .aside {
+          padding-left: 50px;
+          margin-top: 70px;
+        }
+
+        .text p {
+          padding-top: 70px;
+          padding-left: 25px;
+          padding-right: 50px;
+        }
+      }
+
+      .selection__title {
+        padding-left: 73px;
+      }
+    }
+
+    .selection__box:not(:first-child) {
+      margin-left: 80px;
     }
   }
 }

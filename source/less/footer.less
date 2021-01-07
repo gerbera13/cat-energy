@@ -49,10 +49,10 @@
 
 @media (min-width: 768px) {
   .footer {
-    padding-top: 60px;
-    padding-bottom: 66px;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     .footer__title,
     .footer__name {
@@ -103,5 +103,16 @@
   .social__fasebook {
     height: 27px;
     width: 13px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .footer {
+    padding: 20px 110px;
+
+
+    .footer__title {
+      text-align: left;
+    }
   }
 }

@@ -6,7 +6,16 @@
   color: white;
   margin: 0;
 
+  .container {
+    padding: 0;
+  }
+
+
   img.tablet {
+    display: none;
+  }
+
+  img.desktop {
     display: none;
   }
 
@@ -31,9 +40,6 @@
   }
 
   .promo__box {
-    padding: 29px 20px 0 20px;
-
-
     img.mobil {
       margin-top: -110px;
       margin-bottom: 0;
@@ -72,7 +78,6 @@
       color: #000000;
       line-height: 60px;
       text-align: left;
-      max-width: 400px;
       margin: 0 117px;
       padding: 50px 0 0 0;
     }
@@ -90,10 +95,43 @@
 
     .promo__aside {
       font-size: 20px;
-      top: 442px;
-      left: 88px;
+      top: 420px;
+      left: 85px;
       padding: 14px 26px 14px 26px;
       position: absolute;
+    }
+  }
+}
+
+
+@media (min-width: @desktop) {
+  .promo {
+    .promo__box {
+      img.desktop {
+        display: block;
+      }
+
+      img.tablet {
+        display: none;
+      }
+    }
+
+    .promo__green {
+      background-color: @color;
+    }
+
+    .promo__wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .promo__title {
+      margin: 0;
+    }
+
+    .promo__green p {
+      padding-top: 40px;
+      margin: 0;
     }
   }
 }
