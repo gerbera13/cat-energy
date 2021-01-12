@@ -23,3 +23,36 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .profile {
+    padding: 0 0 60px 0;
+    border-top: none;
+  }
+
+  .profile__list {
+    font-size: 20px;
+
+    input {
+      font-size: 20px;
+      font-family: "Oswald", sans-serif;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .profile__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .profile {
+      width: 50%;
+      margin-right: 80px;
+    }
+
+    .select {
+      width: 50%;
+    }
+  }
+}

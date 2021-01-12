@@ -29,7 +29,7 @@
 
   .options__dispatch {
     button {
-      font-size: 14px;
+      font-size: 16px;
       text-transform: @text;
       color: white;
       background-color: @green;
@@ -44,5 +44,55 @@
       margin-bottom: 32px;
       text-align: center;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .options {
+    padding: 0;
+
+    .options__aside {
+      h2 {
+        font-size: 36px;
+        margin-bottom: 55px;
+      }
+    }
+
+    .options__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 120px;
+
+      input {
+        width: 40px;
+        height: 40px;
+      }
+
+      div {
+        margin: -35px 0 30px 65px;
+      }
+    }
+
+    .options__dispatch {
+      display: flex;
+
+      button {
+        font-size: 20px;
+        width: 50%;
+        margin: 25px 60px 72px 0;
+        padding: 13px 45px 13px 45px;
+      }
+
+      p {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .options .options__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 }
