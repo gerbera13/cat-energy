@@ -6,8 +6,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="nav">
-  <div class="nav__header">
+<div class="header">
+  <div class="nav__header nav__header--border">
     <span class="nav__logo">
       <img src="https://via.placeholder.com/33x37" alt="cat">
     </span>
@@ -17,61 +17,76 @@
       <span class="nav__burger-line"></span>
       <span class="nav__burger-line"></span>
     </button>
+    <ul class="nav__list">
+      <li class="main"><a href="#">главная</a></li>
+      <li><a href="#">каталог продукции</a></li>
+      <li class="last"><a href="#">подбор программы</a></li>
+    </ul>
   </div>
 </div>
 <div class="main">
   <section class="title">
-    <div class="title__text"><h1>Подбор программы</h1></div>
-    <p class="title__description">
-      Заполните анкету, и мы подберем <br>
-      программу питания для вашего кота
-    </p>
+    <div class="mini-container">
+      <div class="title__text"><h1>Подбор программы</h1></div>
+      <p class=" title__description">
+        Заполните анкету, и мы подберем <br>
+        программу питания для вашего кота
+      </p>
+    </div>
   </section>
   <form action="https://echo.htmlacademy.ru" name="text" method="post">
-    <div class="profile">
-      <div class="profile__list">
-        <div class="profile__item">
-          <label for="cat-name">Имя:<sup><small>*</small></sup></label>
-          <input id="cat-name" type="text" value="БАРСИК">
-        </div>
-        <div class="profile__item">
-          <label for="cat-weight">Вес(КГ):<sup><small>*</small></sup></label>
-          <input id="cat-weight" type="text" value="7">
-        </div>
-        <div class="profile__item">
-          <label for="cat-age">Возраст (ЛЕТ):</label>
-          <input id="cat-age" type="text" value="7">
-        </div>
-      </div>
-    </div>
-    <div class="select">
-      <div class="select__list">
-        <div>
-          <label for="s1" class="select__radio">
-            <input id="s1" type="radio" name="choice" checked>
-            <div class="select__radio-circle">
-              <div class="select__radio-inside"></div>
+    <div class="mini-container">
+      <div class="profile__wrap">
+        <div class="profile">
+
+          <div class="profile__list">
+            <div class="profile__item">
+              <label for="cat-name">Имя:<sup><small>*</small></sup></label>
+              <input id="cat-name" type="text" value="БАРСИК">
             </div>
-            <span>ПОХУДЕНИЕ</span>
-          </label>
-        </div>
-        <div>
-          <label for="s2" class="select__radio">
-            <input id="s2" type="radio" name="choice">
-            <div class="select__radio-circle">
-              <div class="select__radio-inside"></div>
+            <div class="profile__item">
+              <label for="cat-weight">Вес(КГ):<sup><small>*</small></sup></label>
+              <input id="cat-weight" type="text" value="7">
             </div>
-            <span>НАБОР МАССЫ</span>
-          </label>
-        </div>
-        <div>
-          <label for="s3" class="select__radio">
-            <input id="s3" type="radio" name="choice">
-            <div class="select__radio-circle">
-              <div class="select__radio-inside"></div>
+            <div class="profile__item">
+              <label for="cat-age">Возраст (ЛЕТ):</label>
+              <input id="cat-age" type="text" value="7">
             </div>
-            <span>НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
-          </label>
+          </div>
+
+        </div>
+        <div class="select">
+
+          <div class="select__list">
+            <div>
+              <label for="s1" class="select__radio">
+                <input id="s1" type="radio" name="choice" checked>
+                <div class="select__radio-circle">
+                  <div class="select__radio-inside"></div>
+                </div>
+                <span>ПОХУДЕНИЕ</span>
+              </label>
+            </div>
+            <div>
+              <label for="s2" class="select__radio">
+                <input id="s2" type="radio" name="choice">
+                <div class="select__radio-circle">
+                  <div class="select__radio-inside"></div>
+                </div>
+                <span>НАБОР МАССЫ</span>
+              </label>
+            </div>
+            <div>
+              <label for="s3" class="select__radio">
+                <input id="s3" type="radio" name="choice">
+                <div class="select__radio-circle">
+                  <div class="select__radio-inside"></div>
+                </div>
+                <span>НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
+              </label>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -113,7 +128,7 @@
 </clipPath>
 </defs>
 </svg>
-          </span>
+            </span>
         </div>
       </section>
     </div>
@@ -123,31 +138,33 @@
         <div class="comments__line"></div>
       </div>
       <div class="comments__box">
-      <textarea id="comment" class="comments__text" name="comment" rows="10">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
+        <textarea id="comment" class="comments__text" name="comment" rows="10">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
       </div>
     </section>
     <section class="options">
-      <div class="options__aside">
-        <h2>Дополнительно</h2>
-        <div></div>
-      </div>
-      <div class="options__list">
-        <label><input type="checkbox" checked>
-          <div>Сахарозаменитель</div>
-        </label>
-        <label><input type="checkbox">
-          <div>Питьевая вода</div>
-        </label>
-        <label><input type="checkbox">
-          <div>Молоко</div>
-        </label>
-        <label><input type="checkbox">
-          <div>Витамины</div>
-        </label>
-      </div>
-      <div class="options__dispatch">
-        <button type="submit">Отправить заявку</button>
-        <p><sup><small>*</small></sup>-Обязательные поля</p>
+      <div class="mini-container">
+        <div class="options__aside">
+          <h2>Дополнительно</h2>
+          <div></div>
+        </div>
+        <div class="options__list">
+          <label><input type="checkbox" checked>
+            <div>Сахарозаменитель</div>
+          </label>
+          <label><input type="checkbox">
+            <div>Питьевая вода</div>
+          </label>
+          <label><input type="checkbox">
+            <div>Молоко</div>
+          </label>
+          <label><input type="checkbox">
+            <div>Витамины</div>
+          </label>
+        </div>
+        <div class="options__dispatch">
+          <button type="submit">Отправить заявку</button>
+          <p><sup><small>*</small></sup>-Обязательные поля</p>
+        </div>
       </div>
     </section>
   </form>
