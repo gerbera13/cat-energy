@@ -6,8 +6,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="header">
-  <div class="nav__header">
+<header class="header">
+  <div class="nav__header nav__header--border">
     <span class="nav__logo">
       <img src="https://via.placeholder.com/33x37" alt="cat">
     </span>
@@ -17,235 +17,275 @@
       <span class="nav__burger-line"></span>
       <span class="nav__burger-line"></span>
     </button>
+    <ul class="nav__list">
+      <li><a href="#">главная</a></li>
+      <li class="main"><a href="#">каталог продукции</a></li>
+      <li><a href="#">подбор программы</a></li>
+    </ul>
   </div>
-</div>
+</header>
 <main>
-  <article class="heading"><h1>Каталог продукции</h1></article>
+  <article class="heading">
+    <div class="mini-container">
+      <h1>Каталог продукции</h1>
+    </div>
+  </article>
   <div class="container">
     <ul class="container__list">
-      <li class="container__list-lead">
-        <div class="container__img">
-          <img src="https://via.placeholder.com/68x86" alt="food">
-        </div>
-        <div>
-          <h2>Cat Energy <br>PRO 500гр</h2>
-          <table>
-            <tr>
-              <td>Масса</td>
-              <td>500 гр</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Курица</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>700 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <div class="container__btn">
-          <button class="btn btn--green" type="submit">Заказать</button>
-        </div>
-      </li>
-      <li class="container__list-lead">
-        <div class="container__img">
-          <img src="https://via.placeholder.com/84x100" alt="food">
-        </div>
-        <div>
-          <h2>Cat Energy <br>PRO 1000гр</h2>
-          <table>
-            <tr>
-              <td>Масса</td>
-              <td>1000 гр</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Курица</td>
-            <tr>
-              <td>Цена</td>
-              <td>1000 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <div class="container__btn">
-          <button class="btn btn--green" type="submit">Заказать</button>
+      <li>
+        <div class="container__list-lead">
+          <div class="container__img">
+            <img src="https://via.placeholder.com/68x86" alt="food">
+          </div>
+          <div class="container__box">
+            <h2>Cat Energy <br>PRO 500гр</h2>
+            <table>
+              <tr>
+                <td>Масса</td>
+                <td>500 гр</td>
+              </tr>
+              <tr>
+                <td>Вкус</td>
+                <td>Курица</td>
+              </tr>
+              <tr>
+                <td>Цена</td>
+                <td>700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container__btn">
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
         </div>
       </li>
-      <li class="container__list-lead">
-        <div class="container__img">
-          <img src="https://via.placeholder.com/68x78" alt="food">
-        </div>
-        <div><h2>Cat Energy <br>PRO 500гр</h2>
-          <table>
-            <tr>
-              <td>Масса</td>
-              <td>500 гр</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Рыба</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>700 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <div class="container__btn">
-          <button class="btn btn--green" type="submit">Заказать</button>
-        </div>
-      </li>
-      <li class="container__list-lead">
-        <div class="container__img">
-          <img src="https://via.placeholder.com/84x100" alt="food">
-        </div>
-        <div><h2>Cat Energy <br>PRO 1000гр</h2>
-          <table>
-            <tr>
-              <td>Масса</td>
-              <td>1000 гр</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Рыба</td>
-            <tr>
-              <td>Цена</td>
-              <td>1000 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <div class="container__btn">
-          <button class="btn btn--green" type="submit">Заказать</button>
+      <li>
+        <div class="container__list-lead">
+          <div class="container__img">
+            <img src="https://via.placeholder.com/84x100" alt="food">
+          </div>
+          <div class="container__box">
+            <h2>Cat Energy <br>PRO 1000гр</h2>
+            <table>
+              <tr>
+                <td>Масса</td>
+                <td>1000 гр</td>
+              </tr>
+              <tr>
+                <td>Вкус</td>
+                <td>Курица</td>
+              <tr>
+                <td>Цена</td>
+                <td>1000 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container__btn">
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
         </div>
       </li>
-      <li class="container__list-lead">
-        <div class="container__img">
-          <img src="https://via.placeholder.com/68x78" alt="food">
-        </div>
-        <div>
-          <h2>Cat Energy <br>SLIM 500гр</h2>
-          <table>
-            <tr>
-              <td>Масса</td>
-              <td>500 гр</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Гречка</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>400 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <div class="container__btn">
-          <button class="btn btn--green" type="submit">Заказать</button>
-        </div>
-      </li>
-      <li class="container__list-lead">
-        <div class="container__img">
-          <img src="https://via.placeholder.com/84x100" alt="food">
-        </div>
-        <div><h2>Cat Energy <br>SLIM 1000гр</h2>
-          <table>
-            <tr>
-              <td>Масса</td>
-              <td>1000 гр</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Гречка</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>700 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <div class="container__btn">
-          <button class="btn btn--green" type="submit">Заказать</button>
+      <li>
+        <div class="container__list-lead">
+          <div class="container__img">
+            <img src="https://via.placeholder.com/68x78" alt="food">
+          </div>
+          <div class="container__box"><h2>Cat Energy <br>PRO 500гр</h2>
+            <table>
+              <tr>
+                <td>Масса</td>
+                <td>500 гр</td>
+              </tr>
+              <tr>
+                <td>Вкус</td>
+                <td>Рыба</td>
+              </tr>
+              <tr>
+                <td>Цена</td>
+                <td>700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container__btn">
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
         </div>
       </li>
-      <li class="container__list-lead">
-        <div class="container__img">
-          <img src="https://via.placeholder.com/72x84" alt="food">
+      <li>
+        <div class="container__list-lead">
+          <div class="container__img">
+            <img src="https://via.placeholder.com/84x100" alt="food">
+          </div>
+          <div class="container__box"><h2>Cat Energy <br>PRO 1000гр</h2>
+            <table>
+              <tr>
+                <td>Масса</td>
+                <td>1000 гр</td>
+              </tr>
+              <tr>
+                <td>Вкус</td>
+                <td>Рыба</td>
+              <tr>
+                <td>Цена</td>
+                <td>1000 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container__btn">
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
         </div>
-        <div><h2>Cat Energy <br>SLIM 500гр</h2>
-          <table>
-            <tr>
-              <td>Масса</td>
-              <td>500 гр</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Рис</td>
-            <tr>
-              <td>Цена</td>
-              <td>500 Р.</td>
-            </tr>
-          </table>
+      </li>
+      <li>
+        <div class="container__list-lead">
+          <div class="container__img">
+            <img src="https://via.placeholder.com/68x78" alt="food">
+          </div>
+          <div class="container__box">
+            <h2>Cat Energy <br>SLIM 500гр</h2>
+            <table>
+              <tr>
+                <td>Масса</td>
+                <td>500 гр</td>
+              </tr>
+              <tr>
+                <td>Вкус</td>
+                <td>Гречка</td>
+              </tr>
+              <tr>
+                <td>Цена</td>
+                <td>400 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container__btn">
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
         </div>
-        <div class="container__btn">
-          <button class="btn btn--green" type="submit">Заказать</button>
+      </li>
+      <li>
+        <div class="container__list-lead">
+          <div class="container__img">
+            <img src="https://via.placeholder.com/84x100" alt="food">
+          </div>
+          <div class="container__box"><h2>Cat Energy <br>SLIM 1000гр</h2>
+            <table>
+              <tr>
+                <td>Масса</td>
+                <td>1000 гр</td>
+              </tr>
+              <tr>
+                <td>Вкус</td>
+                <td>Гречка</td>
+              </tr>
+              <tr>
+                <td>Цена</td>
+                <td>700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container__btn">
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container__list-lead">
+          <div class="container__img">
+            <img src="https://via.placeholder.com/72x84" alt="food">
+          </div>
+          <div class="container__box"><h2>Cat Energy <br>SLIM 500гр</h2>
+            <table>
+              <tr>
+                <td>Масса</td>
+                <td>500 гр</td>
+              </tr>
+              <tr>
+                <td>Вкус</td>
+                <td>Рис</td>
+              <tr>
+                <td>Цена</td>
+                <td>500 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container__btn">
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container__list-show">
+          <div class="container__show">
+            <div class="show__wrap">
+              <div class="show__plus">
+                <div class="show__plus-horizontal"></div>
+                <div class="show__plus-vertical"></div>
+              </div>
+              <div class="show__aside">
+                <p>Показать еще 100500 товаров<br></p>
+                <span>На самом деле вкусов гораздо больше!</span>
+                <div class="show__btn">
+                  <button class="btn" type="submit">Показать все</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
     </ul>
   </div>
-  <div class="show">
-    <div class="show__wrap">
-      <div class="show__plus">
-        <div class="show__plus-horizontal"></div>
-        <div class="show__plus-vertical"></div>
+  <section class="goods">
+    <div class="mini-container">
+      <div class="goods__aside">
+        <div>Дополнительные товары</div>
+        <div></div>
       </div>
-      <div class="show__aside">
-        <p>Показать еще 100500 товаров<br></p>
-        <span>На самом деле вкусов гораздо больше!</span>
-        <div class="show__btn">
-          <button class="btn" type="submit">Показать все</button>
+      <div class="goods__wrap">
+        <div class="goods__title">
+          <div>
+            <h3>Сахарозаменитель</h3>
+            <article class="goods__list">
+              <h4>1 упаковка (100 г)</h4>
+              <p>200 Р.</p>
+            </article>
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
+          <div>
+            <h3>Питьевая вода</h3>
+            <article class="goods__list">
+              <h4>5 литров</h4>
+              <p>50 Р.</p>
+            </article>
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
+          <div>
+            <h3>Молоко</h3>
+            <article class="goods__list">
+              <h4>1 литр</h4>
+              <p>100 Р.</p>
+            </article>
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
+          <div>
+            <h3>Витамины</h3>
+            <article class="goods__list">
+              <h4>1 упаковка (30 г)</h4>
+              <p>300 Р.</p>
+            </article>
+            <button class="btn btn--green" type="submit">Заказать</button>
+          </div>
+        </div>
+        <div class="box-present">
+          <div>Закажите все<br>
+            и получите чехол для<br>
+            кота в подарок!
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
-  <div class="goods">
-    <div class="goods__aside">
-      <div>Дополнительные товары</div>
-      <div></div>
-    </div>
-    <section class="goods__title">
-      <h3>Сахарозаменитель</h3>
-      <article class="goods__list">
-        <h4>1 упаковка (100 г)</h4>
-        <p>200 Р.</p>
-      </article>
-      <button class="btn btn--green" type="submit">Заказать</button>
-      <h3>Питьевая вода</h3>
-      <article class="goods__list">
-        <h4>5 литров</h4>
-        <p>50 Р.</p>
-      </article>
-      <button class="btn btn--green" type="submit">Заказать</button>
-      <h3>Молоко</h3>
-      <article class="goods__list">
-        <h4>1 литр</h4>
-        <p>100 Р.</p>
-      </article>
-      <button class="btn btn--green" type="submit">Заказать</button>
-      <h3>Витамины</h3>
-      <article class="goods__list">
-        <h4>1 упаковка (30 г)</h4>
-        <p>300 Р.</p>
-      </article>
-      <button class="btn btn--green" type="submit">Заказать</button>
-    </section>
-    <div class="box-present">
-      <div>Закажите все<br>
-        и получите чехол для<br>
-        кота в подарок!
-      </div>
-    </div>
-  </div>
+  </section>
 </main>
 <div class="contacts">
   <div class="contacts__list contacts__list--grey">
