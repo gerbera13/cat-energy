@@ -10,20 +10,32 @@
 <header class="header">
   <div class="container">
     <div class="nav__header">
-    <span class="nav__logo">
-      <img src="https://via.placeholder.com/33x37" alt="cat">
-    </span>
-      <span class="nav__title"><b>CAT</b> ENERGY</span>
-      <button class="nav__burger">
-        <span class="nav__burger-line"></span>
-        <span class="nav__burger-line"></span>
-        <span class="nav__burger-line"></span>
-      </button>
-      <ul class="nav__list">
-        <li class="main"><a href="#">главная</a></li>
-        <li><a href="#">каталог продукции</a></li>
-        <li><a href="#">подбор программы</a></li>
-      </ul>
+      <div class="nav__wrapper">
+        <span class="nav__logo">
+          <img class="nav-mobile" src="img/logo-mobile.svg" width="34" height="38" alt="cat">
+          <img class="nav-tablet" src="img/logo-tablet.svg" width="174" height="52" alt="cat">
+          <img class="nav-desktop" src="img/logo-desktop.svg" width="202" height="59" alt="cat">
+        </span>
+        <span class="nav__title">
+        <img src="img/logo-2.svg" width="101" height="18" alt="CAT ENERGY">
+      </span>
+        <button class="nav__burger js-button opened">
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+          <svg class="nav__burger-cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="nav__main-nav main-nave--nojs js-menu opened">
+        <ul class="nav__list">
+          <li class="main"><a href="/">главная</a></li>
+          <li><a href="catalog.html">каталог продукции</a></li>
+          <li><a href="form.html">подбор программы</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 </header>
@@ -39,8 +51,8 @@
       </div>
       <div class="promo__box">
         <img class="mobil" src="img/стаканчик.png" alt="food">
-        <img class="tablet" src="img/tablet 1.png" alt="food">
-        <img class="desktop" src="img/desktop 2.png" alt="food">
+        <img class="tablet" src="img/tablet1.png" alt="food">
+        <img class="desktop" src="img/desktop-2.png" alt="food">
         <a href="#" class="promo__aside">
           ПОДОБРАТЬ ПРОГРАММУ
         </a>
@@ -53,21 +65,26 @@
     <div class="selection__all">
       <div class="selection__box">
         <div class="selection__cat">
-          <img class="image" src="https://via.placeholder.com/200x200" alt="cat">
+          <img class="image" src="img/cat_back.svg" width="50" height="53" alt="cat">
+          <img class="image-tablet" src="img/cat_back-tablet.svg" width="200" height="211" alt="cat">
+          <img class="image-3" src="img/cat_back-desktop1.svg" width="100" height="106" alt="cat">
           <h3 class="aside">ПОХУДЕНИЕ</h3>
           <div class="text">
             <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p></div>
         </div>
-        <div><a href="#" class="selection__title">КАТАЛОГ SLIM<span>&#10141;</span></a></div>
+        <div><a href="#" class="selection__title">КАТАЛОГ SLIM<span><img src="img/icon.svg" alt="стрелочка"></span></a></div>
       </div>
       <div class="selection__box">
         <div class="selection__cat">
-          <img class="image" src="https://via.placeholder.com/200x200" alt="cat">
+          <img class="image-second" src="img/cat_back2.svg" width="67" height="50" alt="cat">
+          <img class="image-2" src="img/cat_back-tablet2.svg" width="268" height="200" alt="cat">
+          <img class="image-4" src="img/cat_back-desktop2.svg" width="134" height="100" alt="cat">
           <h3 class="aside">НАБОР МАССЫ</h3>
           <div class="text">
-            <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p></div>
+            <p>Заработать авторитет среди дворовых котов <br> и даже собак? Серия Cat Energy Pro поможет<br> вашему коту нарастить необходимые мышцы!</p></div>
         </div>
-        <div><a href="#" class="selection__title">КАТАЛОГ PRO<span>&#10141;</span></a></div>
+        <div><a href="#" class="selection__title">КАТАЛОГ PRO<span>
+          <img src="img/icon.svg" alt="стрелочка"></span></a></div>
       </div>
     </div>
   </div>
@@ -79,7 +96,7 @@
 
       <div class="special__item">
         <div class="number">1</div>
-        <img src="https://via.placeholder.com/60x60" alt="leaf">
+        <img src="img/Group-1.svg" width="60" height="60" alt="leaf">
         <p>
           Функциональное питание
           содержит только полезные
@@ -88,7 +105,7 @@
       </div>
       <div class="special__item">
         <div class="number">2</div>
-        <img src="https://via.placeholder.com/60x60" alt="
+        <img src="img/Group-2.svg" width="60" height="60" alt="
 pan">
         <p class="special__text">
           Выпускается в виде порошка,
@@ -99,7 +116,7 @@ pan">
       </div>
       <div class="special__item">
         <div class="number">3</div>
-        <img src="https://via.placeholder.com/60x60" alt="
+        <img src="img/Group-3.svg" width="60" height="60" alt="
 cutlery">
         <p class="special__text">
           Замените один-два приема
@@ -109,7 +126,7 @@ cutlery">
       </div>
       <div class="special__item">
         <div class="number">4</div>
-        <img src="https://via.placeholder.com/60x60" alt="
+        <img src="img/Group-4.svg" width="60" height="60" alt="
 weigher">
         <p class="special__text">
           Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
@@ -151,7 +168,7 @@ weigher">
           </h4>
         </section>
       </section>
-      <section class="bc">
+      <div class="bc">
         <div class="ab"></div>
         <div class="wrapper">
           <div class="first"><img src="img/fat-cat.png" alt="Толстый"></div>
@@ -164,7 +181,7 @@ weigher">
           </div>
           <div class="example__compare--left">СТАЛО</div>
         </div>
-      </section>
+      </div>
       <div class="bg"></div>
     </div>
   </div>
@@ -176,7 +193,9 @@ weigher">
     <address><span>ул. Большая Конюшенная, д. 19/8</span><span>Санкт-Петербург</span></address>
   </div>
   <div class="contacts__map">
-    <img src="https://via.placeholder.com/320x362" alt="map">
+    <iframe height="400"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602"
+            allowfullscreen></iframe>
   </div>
 </div>
 <div class="footer">
@@ -210,7 +229,7 @@ weigher">
   </div>
   <div class="footer__name">
     <span class="footer__aside">HTML Academy</span>
-    <span><img src="https://via.placeholder.com/27x34" alt="icon"></span>
+    <span><img src="img/html-academy.svg" width="27" height="34" alt="icon"></span>
   </div>
 </div>
 <script src="js/app.js"></script>

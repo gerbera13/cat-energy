@@ -7,21 +7,35 @@
 </head>
 <body>
 <header class="header">
-  <div class="nav__header nav__header--border">
-    <span class="nav__logo">
-      <img src="https://via.placeholder.com/33x37" alt="cat">
-    </span>
-    <span class="nav__title"><b>CAT</b> ENERGY</span>
-    <button class="nav__burger">
-      <span class="nav__burger-line"></span>
-      <span class="nav__burger-line"></span>
-      <span class="nav__burger-line"></span>
-    </button>
-    <ul class="nav__list">
-      <li><a href="#">главная</a></li>
-      <li ><a href="#">каталог продукции</a></li>
-      <li class="main"><a href="#">подбор программы</a></li>
-    </ul>
+  <div class="container">
+    <div class="nav__header">
+      <div class="nav__wrapper">
+        <span class="nav__logo">
+          <img class="nav-mobile" src="img/logo-mobile.svg" width="34" height="38" alt="cat">
+          <img class="nav-tablet" src="img/logo-tablet.svg" width="174" height="52" alt="cat">
+          <img class="nav-desktop" src="img/logo-desktop.svg" width="202" height="59" alt="cat">
+        </span>
+        <span class="nav__title">
+        <img src="img/logo-2.svg" width="101" height="18" alt="CAT ENERGY">
+      </span>
+        <button class="nav__burger js-button opened">
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+          <svg class="nav__burger-cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="nav__main-nav main-nave--nojs js-menu opened">
+        <ul class="nav__list">
+          <li class="main"><a href="/">главная</a></li>
+          <li><a href="catalog.html">каталог продукции</a></li>
+          <li><a href="form.html">подбор программы</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 <div class="main">
@@ -176,7 +190,9 @@
       <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
     <div class="contacts__map">
-      <img src="https://via.placeholder.com/320x362" alt="map">
+      <iframe height="400"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602"
+              allowfullscreen></iframe>
     </div>
   </div>
   <div class="footer">
@@ -214,5 +230,6 @@
     </div>
   </div>
 </div>
+<script src="js/app.js"></script>
 </body>
 </html>

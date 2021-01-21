@@ -1,15 +1,33 @@
 .selection {
+  .container {
+    padding: 0 20px;
+  }
+
   .selection__cat {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 90px 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "image aside" "text text";
 
 
     .image {
       grid-area: image;
-      margin: 24px 19px 22px 22px;
+      margin: 21px 19px 22px 22px;
       width: 50px;
+    }
+
+    .image-second {
+      grid-area: image;
+      width: 67px;
+      height: 50px;
+      margin: 24px 11px 22px 13px;
+    }
+
+    .image-tablet,
+    .image-2,
+    .image-3,
+    .image-4 {
+      display: none;
     }
 
     .aside {
@@ -36,9 +54,14 @@
     }
 
     .selection__title {
-      padding: 19px 0 22px 50px;
+      padding: 19px 0 22px 20px;
       text-decoration: none;
       display: inline-block;
+      color: black;
+
+      img {
+        padding-left: 15px;
+      }
     }
   }
 }
@@ -46,81 +69,114 @@
 
 @media (min-width: 768px) {
   .selection {
-    .selection__title {
-      font-size: 20px;
-      padding-left: 50px;
-    }
+    .selection__box {
+      margin-bottom: 30px;
+      height: 372px;
 
-    .selection__cat {
-      padding-left: 50px;
-      grid-template-columns: 1fr 280px;
-      grid-template-rows: 150px 85px;
-      grid-template-areas:
-        "aside image"
-        "text image";
-
-      .text p {
-        margin: 0;
-        border: none;
-        align-self: center;
-        padding: 0;
-        font-size: 16px;
+      .selection__title {
+        font-size: 20px;
+        padding-left: 50px;
+        padding-bottom: 57px;
+        padding-top: 20px;
       }
 
-      .image {
-        margin-top: 50px;
-        width: auto;
-      }
+      .selection__cat {
+        padding-left: 50px;
+        grid-template-columns: 1fr 280px;
+        grid-template-rows: 150px 85px;
+        grid-template-areas: "aside image" "text image";
 
-      .aside {
-        font-size: 36px;
-        margin-top: 50px;
-        margin-bottom: 14px;
+
+        .image,
+        .image-second,
+        .image-3,
+        .image-4 {
+          display: none;
+        }
+
+        .image-tablet {
+          display: block;
+          grid-area: image;
+          margin: 90px 60px 80px 17px;
+        }
+
+        .image-2 {
+          display: block;
+          grid-area: image;
+          margin: 90px 0 80px -20px;
+        }
+
+        .text p {
+          margin: 0;
+          border: none;
+          align-self: center;
+          padding: 0;
+          font-size: 16px;
+        }
+
+        .aside {
+          font-size: 36px;
+          margin-top: 70px;
+          margin-bottom: 14px;
+        }
       }
     }
   }
 }
 
 @media (min-width: @desktop) {
-  .selection__all {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  .selection {
+    .container {
+      padding: 0;
 
 
-    .selection__box {
-      .selection__cat {
-        padding-left: 50px;
-        grid-template-columns: 100px 1fr;
-        grid-template-rows: 100px 1fr;
-        grid-template-areas: "image aside""text text";
+      .selection__all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-        .image {
-          height: 100px;
-          width: 100px;
+
+        .selection__box {
+          .selection__cat {
+            padding-left: 50px;
+            grid-template-columns: 135px 1fr;
+            grid-template-rows: 120px 1fr;
+            grid-template-areas: "image aside""text text";
+
+            .image,
+            .image-tablet,
+            .image-second,
+            .image-2 {
+              display: none;
+            }
+
+            .image-3,
+            .image-4 {
+              display: block;
+              margin-top: 50px;
+            }
+
+            .aside {
+              padding-left: 50px;
+              margin-top: 70px;
+            }
+
+            .text p {
+              padding-top: 70px;
+              padding-left: 25px;
+              padding-right: 50px;
+            }
+          }
+
+          .selection__title {
+            padding-left: 73px;
+            padding-top: 30px;
+          }
         }
 
-        .aside {
-          padding-left: 50px;
-          margin-top: 70px;
-        }
-
-        .text p {
-          padding-top: 70px;
-          padding-left: 25px;
-          padding-right: 50px;
+        .selection__box:not(:first-child) {
+          margin-left: 80px;
         }
       }
-
-      .selection__title {
-        padding-left: 73px;
-      }
-    }
-
-    .selection__box:not(:first-child) {
-      margin-left: 80px;
     }
   }
 }
