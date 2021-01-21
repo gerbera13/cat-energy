@@ -1,6 +1,12 @@
 .special {
+  .container {
+    padding: 0 20px;
+  }
+
   .special__title {
     font-size: 36px;
+    margin: 0;
+    padding-bottom: 40px;
   }
 
   .special__item {
@@ -50,9 +56,14 @@
       font-family: "Arial", sans-serif;
       position: relative;
 
-      img,
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
       p {
         position: relative;
+        font-size: 16px;
       }
 
       .number {
@@ -61,8 +72,8 @@
         color: #f2f2f2;
         position: absolute;
         display: block;
-        top: -32px;
-        right: 69px;
+        top: -46px;
+        right: 36px;
         font-family: "Oswald", sans-serif;
       }
     }
@@ -74,7 +85,7 @@
     .special__list {
       grid-template-columns: 218px 245px 230px 271px;
       grid-column-gap: 90px;
-      padding-bottom: 0;
+      padding-bottom: 30px;
     }
 
     .special__item {
