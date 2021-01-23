@@ -6,7 +6,12 @@
   h2 {
     font-size: 24px;
     padding-right: @padding;
+    margin-bottom: 35px;
   }
+
+  /*.owner__line-first {
+    display: none;
+  }*/
 
   .owner__title {
     .owner__holder {
@@ -52,7 +57,13 @@
 
 @media (min-width: 768px) {
   .owner {
-    padding-left: 70px;
+    .owner__line-first {
+      border-top: 2px solid rgba(104, 183, 56, 1);
+      width: 30px;
+      z-index: 1;
+    }
+
+    padding: 0;
 
     .owner__contact {
       font-size: 20px;
@@ -60,9 +71,14 @@
     }
 
     .owner__title {
+      .owner__wrapper {
+        padding-left: 70px;
+      }
+
       .owner__holder {
         h2 {
           font-size: 36px;
+          padding-left: 40px;
         }
 
         .owner__line {
@@ -74,7 +90,39 @@
 }
 
 @media (min-width: @desktop) {
-  .owner__title {
-    padding-left: 40px;
+  .owner {
+    .owner__title {
+      .owner__holder {
+        .owner__line-first {
+          width: 70px;
+          margin-top: -45px;
+        }
+
+        .owner__line {
+          margin-top: -45px;
+        }
+      }
+
+      .owner__wrapper {
+        display: flex;
+        margin: 0 110px;
+        padding: 0;
+
+        .owner__contact {
+          padding-bottom: 14px;
+        }
+
+        .owner__contact:first-child {
+          margin-right: 60px;
+        }
+      }
+
+
+      .owner__holder h2 {
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 76px;
+      }
+    }
   }
 }

@@ -69,6 +69,10 @@
 
 @media (min-width: 768px) {
   .selection {
+    .container {
+      padding: 0 30px;
+    }
+
     .selection__box {
       margin-bottom: 30px;
       height: 372px;
@@ -127,7 +131,8 @@
 @media (min-width: @desktop) {
   .selection {
     .container {
-      padding: 0;
+      padding: 82px 0 0 0;
+      margin: 0 110px;
 
 
       .selection__all {
@@ -136,11 +141,14 @@
 
 
         .selection__box {
+          margin-bottom: 0;
+
           .selection__cat {
-            padding-left: 50px;
+            width: 570px;
             grid-template-columns: 135px 1fr;
             grid-template-rows: 120px 1fr;
             grid-template-areas: "image aside""text text";
+
 
             .image,
             .image-tablet,

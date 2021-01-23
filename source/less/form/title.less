@@ -3,13 +3,13 @@
 
 .title {
   font-family: "Oswald", sans-serif;
-  padding: 27px 0 10px 20px;
+  padding: 20px 0 0 20px;
   margin: @margin;
+  border-top: 1px solid rgba(217, 217, 217, 1);
 
   .title__description {
     text-transform: uppercase;
     margin: @margin;
-    padding-bottom: 40px;
     font-size: 14px;
   }
 
@@ -25,6 +25,7 @@
 @media (min-width: 768px) {
   .title {
     padding: 0;
+    border-top: none;
 
 
     .mini-container {
@@ -41,10 +42,18 @@
   }
 }
 
-/*@media (min-width: @desktop) {
+@media (min-width: @desktop) {
   .title {
+    border-top: none;
+
     .mini-container {
-      width: 1200px;
+      padding-bottom: 66px;
+    }
+
+    .title__text {
+      h1 {
+        padding-bottom: 56px;
+      }
     }
   }
-}*/
+}

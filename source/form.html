@@ -28,11 +28,11 @@
           </svg>
         </button>
       </div>
-      <nav class="nav__main-nav main-nave--nojs js-menu opened">
+      <nav class="nav__main-nav js-menu opened">
         <ul class="nav__list">
-          <li class="main"><a href="/">главная</a></li>
+          <li><a href="#">главная</a></li>
           <li><a href="catalog.html">каталог продукции</a></li>
-          <li><a href="form.html">подбор программы</a></li>
+          <li class="active"><a class="active__green" href="form.html">подбор программы</a></li>
         </ul>
       </nav>
     </div>
@@ -70,32 +70,31 @@
 
         </div>
         <div class="select">
-
           <div class="select__list">
             <div>
               <label for="s1" class="select__radio">
                 <input id="s1" type="radio" name="choice" checked>
-                <div class="select__radio-circle">
-                  <div class="select__radio-inside"></div>
-                </div>
+                <span class="select__radio-circle">
+                  <span class="select__radio-inside"></span>
+                </span>
                 <span>ПОХУДЕНИЕ</span>
               </label>
             </div>
             <div>
               <label for="s2" class="select__radio">
                 <input id="s2" type="radio" name="choice">
-                <div class="select__radio-circle">
-                  <div class="select__radio-inside"></div>
-                </div>
+                <span class="select__radio-circle">
+                  <span class="select__radio-inside"></span>
+                </span>
                 <span>НАБОР МАССЫ</span>
               </label>
             </div>
             <div>
               <label for="s3" class="select__radio">
                 <input id="s3" type="radio" name="choice">
-                <div class="select__radio-circle">
-                  <div class="select__radio-inside"></div>
-                </div>
+                <span class="select__radio-circle">
+                  <span class="select__radio-inside"></span>
+                </span>
                 <span>НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
               </label>
             </div>
@@ -106,14 +105,17 @@
     </div>
     <div class="owner">
       <section class="owner__title">
-        <div class="owner__holder"><h2>Контактные данные
-          (владельца кота)</h2>
+        <div class="owner__holder">
+          <div class="owner__line-first"></div>
+          <h2>Контактные данные<br>
+            (владельца кота)</h2>
           <div class="owner__line"></div>
         </div>
-        <div class="owner__contact">
-          <label class="owner__phone">E-MAIL:<sup><small>*</small></sup></label>
-          <input class="owner__number" value="kuklachev@gmail.com">
-          <span class="owner__icon">
+        <div class="owner__wrapper">
+          <div class="owner__contact">
+            <label class="owner__phone">E-MAIL:<sup><small>*</small></sup></label>
+            <input class="owner__number" value="kuklachev@gmail.com">
+            <span class="owner__icon">
             <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="1.65" y1="5.84766" x2="1.65" y2="13.8477" stroke="#222222" stroke-width="1.3"/>
 <line x1="18.65" y1="5.84766" x2="18.65" y2="13.8477" stroke="#222222" stroke-width="1.3"/>
@@ -122,11 +124,11 @@
 <path d="M18.35 3.02975L10 9.5242L1.65 3.02975V1.49766H4.5L10 1.49766H15H18.35V3.02975Z" stroke="#222222" stroke-width="1.3"/>
 </svg>
           </span>
-        </div>
-        <div class="owner__contact">
-          <label class="owner__phone">ТЕЛЕФОН:<sup><small>*</small></sup></label>
-          <input class="owner__number" value="8 (960) 900-60-90">
-          <span class="owner__icon">
+          </div>
+          <div class="owner__contact">
+            <label class="owner__phone">ТЕЛЕФОН:<sup><small>*</small></sup></label>
+            <input class="owner__number" value="8 (960) 900-60-90">
+            <span class="owner__icon">
             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <path
@@ -143,51 +145,69 @@
 </defs>
 </svg>
             </span>
+          </div>
         </div>
       </section>
     </div>
     <section class="comments">
       <div class="comments__wrap">
-        <label for="comment"><h2>Комментарий</h2></label>
+        <div class="comments__line--first"></div>
+        <h2>Комментарий</h2>
         <div class="comments__line"></div>
       </div>
       <div class="comments__box">
-        <textarea id="comment" class="comments__text" name="comment" rows="10">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
+        <textarea id="comment" class="comments__text" name="comment" rows="6">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
       </div>
     </section>
     <section class="options">
-      <div class="mini-container">
-        <div class="options__aside">
+      <div class="options__aside">
+        <div class="options__wrapper">
+          <div class="options__line-first"></div>
           <h2>Дополнительно</h2>
-          <div></div>
+          <div class="options__line"></div>
         </div>
         <div class="options__list">
-          <label><input type="checkbox" checked>
-            <div>Сахарозаменитель</div>
+          <label class="check option">
+            <input class="check__input" type="checkbox" checked>
+            <span class="check__box">
+              <span class="check__tick"></span>
+            </span>
+            <span class="check__text">Сахарозаменитель</span>
           </label>
-          <label><input type="checkbox">
-            <div>Питьевая вода</div>
+          <label class="check">
+            <input class="check__input" type="checkbox">
+            <span class="check__box">
+              <span class="check__tick"></span>
+            </span>
+            <span class="check__text">Питьевая вода</span>
           </label>
-          <label><input type="checkbox">
-            <div>Молоко</div>
+          <label class="check">
+            <input class="check__input" type="checkbox">
+            <span class="check__box">
+              <span class="check__tick"></span>
+            </span>
+            <span class="check__text">Молоко</span>
           </label>
-          <label><input type="checkbox">
-            <div>Витамины</div>
+          <label class="check">
+            <input class="check__input" type="checkbox">
+            <span class="check__box">
+              <span class="check__tick"></span>
+            </span>
+            <span class="check__text">Витамины</span>
           </label>
         </div>
-        <div class="options__dispatch">
-          <button type="submit">Отправить заявку</button>
-          <p><sup><small>*</small></sup>-Обязательные поля</p>
-        </div>
+      </div>
+      <div class="options__dispatch">
+        <button type="submit">Отправить заявку</button>
+        <p><sup><small>*</small></sup> — Обязательные поля</p>
       </div>
     </section>
   </form>
   <div class="contacts">
     <div class="contacts__list contacts__list--grey">
-      <p class="contacts__welcome">Приглашаем<br>
-        к сотрудничеству дилеров!
+      <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!
       </p>
-      <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <address><span>ул. Большая Конюшенная, д. 19/8</span><span>Санкт-Петербург</span></address>
     </div>
     <div class="contacts__map">
       <iframe height="400"
@@ -226,7 +246,7 @@
     </div>
     <div class="footer__name">
       <span>HTML Academy</span>
-      <span><img src="https://via.placeholder.com/27x34" alt="icon"></span>
+      <span><img src="img/html-academy.svg" width="27" height="34" alt="icon"></span>
     </div>
   </div>
 </div>
