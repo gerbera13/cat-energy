@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: 0 solid black;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid rgba(235, 235, 235);
     padding: 20px;
     row-gap: 20px;
 
@@ -138,7 +138,7 @@
       li {
         width: 50%;
         padding: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 25px;
         display: flex;
       }
 
@@ -154,12 +154,13 @@
       }
 
       .container__list-lead {
-        padding: 30px 40px;
+        padding: 0 40px 30px 40px;
         gap: 34px;
         display: flex;
         flex-direction: column;
         background: rgba(242, 242, 242, 1);
         width: 100%;
+        margin-top: 67px;
 
 
         h2 {
@@ -180,14 +181,32 @@
 
           img {
             position: relative;
-            top: -45px;
+            margin-top: -75px;
           }
         }
       }
 
+      li:nth-of-type(2n+1) .container__list-lead {
+        img {
+          width: 161px;
+          height: 172px;
+          top: 30px;
+        }
+      }
+
+      li:nth-of-type(2n) .container__list-lead {
+        img {
+          width: 168px;
+          height: 206px;
+        }
+      }
+
       .container__show {
+        border: 2px solid rgba(242, 242, 242);
+        margin-top: 67px;
+
         .show__wrap {
-          padding: 45px 40px 30px 40px;
+          padding: 45px 40px 20px 40px;
 
           span {
             font-size: 16px;
@@ -213,23 +232,19 @@
           padding: 49px 20px 20px;
         }
       }
+
+      .container__box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: auto;
+      }
+
+      .container__list-lead:last-child,
+      .container__list-lead:nth-child(7) {
+        border-bottom: none;
+      }
     }
-
-    .container__box {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-top: auto;
-    }
-  }
-
-  .container__list-lead:last-child,
-  .container__list-lead:nth-child(7) {
-    border-bottom: none;
-  }
-
-  .container__show {
-    border: 2px solid rgba(242, 242, 242);
   }
 }
 
