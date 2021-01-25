@@ -47,30 +47,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 22px;
-
-    .footer__title,
-    .footer__name {
-      border: none;
-    }
-
-    .footer__aside {
-      margin-right: 22px;
-    }
-
-    .footer__name {
-      span {
-        padding: 10px;
-      }
-    }
-  }
-}
-
 .social__vk {
   --width: 22px;
   --height: 12px;
@@ -93,26 +69,57 @@
 }
 
 @media (min-width: 768px) {
-  .social__vk {
-    width: 30px;
-    height: 17px;
-  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 22px;
 
-  .social__insta {
-    width: 23px;
-    height: 23px;
-  }
+    .footer__title,
+    .footer__name {
+      border: none;
+    }
 
-  .social__facebook {
-    height: 27px;
-    width: 13px;
+    .footer__aside {
+      margin-right: 22px;
+    }
+
+    .footer__name {
+      span {
+        padding: 10px;
+      }
+    }
+
+    .social__vk {
+      --width: 30px;
+      --height: 17px;
+      width: var(--width);
+      height: var(--height);
+    }
+
+    .social__insta {
+      --width: 23px;
+      --height: 23px;
+      width: var(--width);
+      height: var(--height);
+    }
+
+    .social__facebook {
+      --width: 27px;
+      --height: 13px;
+      height: var(--width);
+      width: var(--height);
+    }
+
+    .footer__social div {
+      padding: 30px 15px 30px 15px;
+    }
   }
 }
 
 @media (min-width: @desktop) {
   .footer {
     padding: 21px 110px;
-
 
     .footer__title {
       text-align: left;
