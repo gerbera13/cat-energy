@@ -95,13 +95,14 @@
   .example__subtitle {
     .offset(20px; 0);
     font-size: 36px;
+    font-weight: normal;
   }
 
   .example__lead {
     font-family: "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    padding: 40px 20px;
+    padding: 0 20px;
     margin: 0;
   }
 
@@ -120,6 +121,7 @@
     grid-area: aside;
     text-align: center;
     font-size: 14px;
+    font-weight: normal;
 
     img {
       width: 100%;
@@ -145,6 +147,7 @@
     h3 {
       font-size: 24px;
       margin: 0;
+      font-weight: normal;
     }
 
     .example__weight-text {
@@ -166,13 +169,13 @@
     }
   }
 
-  .example__weight--1 {
+  .example__weight-1 {
     grid-area: weight1;
     display: flex;
     justify-content: center;
   }
 
-  .example__weight--2 {
+  .example__weight-2 {
     grid-area: weight2;
     display: flex;
     justify-content: center;
@@ -184,7 +187,7 @@
 }
 
 
-.example__compare {
+.alive-example__compare {
   display: grid;
   grid-template-columns: auto 1fr auto;
   border-radius: 4%;
@@ -192,13 +195,13 @@
   text-align: center;
 }
 
-.example__compare--right {
+.alive-example__compare-right {
   font-size: 16px;
   text-align: center;
   margin-left: 67px;
 }
 
-.example__compare--left {
+.alive-example__compare-left {
   margin-right: 67px;
 }
 
@@ -311,26 +314,25 @@
     }
   }
 
-  .example__compare {
+  .alive-example__compare {
     position: relative;
 
     .slider {
       padding-left: 20px;
     }
 
-    .example__compare--right {
+    .alive-example__compare-right {
       font-size: @font;
       border-bottom: 1px solid lightgrey;
     }
 
-    .example__compare--left {
+    .alive-example__compare-left {
       text-align: left;
       font-size: @font;
       border-bottom: 1px solid lightgrey;
       margin: 0 184px 0 20px;
     }
   }
-
 
   .container .example-wrapper .bc {
     position: relative;

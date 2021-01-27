@@ -6,20 +6,20 @@
 
 body {
   background-color: white;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
   min-width: 320px;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswald-v35-latin_cyrillic-600.woff2") format("woff2");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswald-v35-latin_cyrillic-regular.woff2") format("woff2");
   font-weight: normal;
 }
 
@@ -54,4 +54,12 @@ body {
     width: 1200px;
     margin: auto;
   }
+}
+
+.btn--green {
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  flex-grow: 1;
+  text-align: center;
 }

@@ -23,12 +23,12 @@
     }
 
     .container__btn {
+      display: flex;
       grid-column-start: 1;
       grid-column-end: 3;
     }
 
     h2 {
-      margin: 0;
       font-size: @size;
       font-weight: 400;
       text-transform: uppercase;
@@ -63,21 +63,21 @@
 .container__show {
   text-align: center;
 
-  .show__plus {
+  .container__show-plus {
     height: 60px;
     width: 60px;
     position: relative;
     margin: auto;
   }
 
-  .show__plus-horizontal {
+  .container__show-plus-horizontal {
     border-bottom: @border2;
     height: 50%;
     width: 100%;
     position: absolute;
   }
 
-  .show__plus-vertical {
+  .container__show-plus-vertical {
     border-right: @border2;
     height: 100%;
     width: 50%;
@@ -86,10 +86,10 @@
 }
 
 
-.show__wrap {
+.container__show-wrap {
   box-sizing: border-box;
 
-  .show__aside {
+  .container__show-aside {
     p {
       font-size: 16px;
       text-transform: uppercase;
@@ -104,7 +104,7 @@
     }
   }
 
-  .show__btn {
+  .container__show-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,8 +113,9 @@
     grid-column-start: 1;
     grid-column-end: 3;
 
-    button {
+    a {
       color: black;
+      text-decoration: none;
     }
   }
 }
@@ -148,7 +149,7 @@
         border-bottom: none;
 
 
-        .show__wrap {
+        .container__show-wrap {
           padding-bottom: 40px;
         }
       }
@@ -205,8 +206,8 @@
         border: 2px solid rgba(242, 242, 242);
         margin-top: 67px;
 
-        .show__wrap {
-          padding: 45px 40px 20px 40px;
+        .container__show-wrap {
+          padding: 45px 40px 30px 40px;
 
           span {
             font-size: 16px;
@@ -214,12 +215,12 @@
             width: 80%;
           }
 
-          .show__aside {
+          .container__show-aside {
             display: flex;
             flex-direction: column;
             text-align: center;
 
-            .show__btn {
+            .container__show-btn {
               .btn {
                 margin-top: 87px;
               }
@@ -227,7 +228,7 @@
           }
         }
 
-        .show__aside p {
+        .container__show-aside p {
           font-size: 20px;
           padding: 49px 20px 20px;
         }

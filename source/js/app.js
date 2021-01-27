@@ -14,10 +14,10 @@ const burger = document.querySelector(".js-button");
 const menu = document.querySelector(".js-menu");
 
 if (burger) {
-  burger.classList.remove('opened');
-  menu.classList.remove('opened');
-  burger.addEventListener('click', function (evt) {
-    burger.classList.toggle('opened');
-    menu.classList.toggle('opened');
+  burger.classList.remove("opened");
+  menu.classList.remove("opened");
+  burger.addEventListener("click", function (evt) {
+    burger.classList.toggle("opened");
+    menu.classList.toggle("opened");
   })
 }
