@@ -1,0 +1,139 @@
+.special {
+  .container {
+    padding: 0 20px;
+  }
+
+  .special__title {
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 40px;
+    font-weight: normal;
+  }
+
+  .special__item {
+    .leaf-tablet,
+    .cutlery-tablet,
+    .pan-tablet,
+    .weigher-tablet {
+      display: none;
+    }
+
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: 20px;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      font-family: "Arial", sans-serif;
+      line-height: 18px;
+    }
+
+    .number {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .special {
+    .container {
+      padding: 0 30px;
+
+      .special__title {
+        margin: 45px 0 70px 0;
+        font-size: 60px;
+      }
+
+      .special__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 90px;
+        grid-column-gap: 154px;
+        padding-bottom: 47px;
+
+        .special__item {
+          grid-template-rows: 80px 160px;
+          grid-row-gap: 20px;
+          grid-template-columns: 80px 1fr;
+        }
+
+
+        .leaf,
+        .cutlery,
+        .pan,
+        .weigher {
+          display: none;
+        }
+
+
+        .leaf-tablet,
+        .cutlery-tablet,
+        .pan-tablet,
+        .weigher-tablet {
+          display: block;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr;
+          font-size: 16px;
+          font-family: "Arial", sans-serif;
+          position: relative;
+          z-index: 1;
+        }
+
+        p {
+          z-index: 3;
+          position: relative;
+          font-size: 16px;
+          width: 245px;
+          line-height: 24px;
+        }
+
+        .number {
+          z-index: 2;
+          font-size: 280px;
+          line-height: 213px;
+          color: rgba(242, 242, 242, 1);
+          display: block;
+          top: -46px;
+          right: 36px;
+          font-family: "Oswald", "Arial", sans-serif;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: @desktop) {
+  .special {
+    .container {
+      padding: 0;
+
+      .special__title {
+        padding-bottom: 0;
+      }
+
+      .special__list {
+        grid-template-columns: 218px 245px 230px 271px;
+        grid-column-gap: 90px;
+        padding-bottom: 0;
+      }
+
+      .special__item {
+        p {
+          padding-right: 0;
+        }
+
+        .number {
+          right: 20px;
+        }
+      }
+    }
+  }
+}

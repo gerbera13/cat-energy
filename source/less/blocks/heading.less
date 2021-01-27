@@ -1,0 +1,37 @@
+
+.heading {
+  padding: 17px 20px 32px 20px;
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+
+  h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    border-top: none;
+    padding-top: 48px;
+    padding-bottom: 0;
+  }
+
+  .heading h1 {
+    font-size: 60px;
+    margin-bottom: 78px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .heading {
+    padding: 40px 0;
+
+    .mini-container {
+      h1 {
+        margin-bottom: 23px;
+      }
+    }
+  }
+}

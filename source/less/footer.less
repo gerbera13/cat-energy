@@ -1,4 +1,5 @@
 @border: 1px solid lightgrey;
+@border2: 2px solid lightgrey;
 
 .footer {
   display: flex;
@@ -17,7 +18,6 @@
   }
 
   .footer__social {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -43,6 +43,101 @@
 
     span {
       font-family: "Arial", sans-serif;
+    }
+  }
+}
+
+.footer__social__vk {
+  --width: 22px;
+  --height: 12px;
+  width: var(--width);
+  height: var(--height);
+}
+
+.footer__social__insta {
+  --width: 16px;
+  --height: 16px;
+  width: var(--width);
+  height: var(--height);
+}
+
+.footer__social__fasebook {
+  --width: 20px;
+  --height: 10px;
+  height: var(--width);
+  width: var(--height);
+}
+
+.footer__copyright {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+    .footer__title,
+    .footer__name {
+      border: none;
+    }
+
+    .footer__aside {
+      margin-right: 22px;
+    }
+
+    .footer__name {
+      span,
+      a {
+        padding: 10px;
+      }
+
+      .footer__copyright {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Arial", sans-serif;
+        font-weight: normal;
+      }
+    }
+
+    .footer__social-vk {
+      --width: 30px;
+      --height: 17px;
+      width: var(--width);
+      height: var(--height);
+    }
+
+    .footer__social-insta {
+      --width: 23px;
+      --height: 23px;
+      width: var(--width);
+      height: var(--height);
+    }
+
+    .footer__social-facebook {
+      --width: 27px;
+      --height: 13px;
+      height: var(--width);
+      width: var(--height);
+    }
+
+    .footer__social div {
+      padding: 30px 15px 30px 15px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .footer {
+    padding: 21px 110px;
+
+    .footer__title {
+      text-align: left;
     }
   }
 }

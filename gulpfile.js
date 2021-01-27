@@ -46,6 +46,24 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
+//Build
+
+const build = () => {
+  return gulp.src([
+    "source/*.html",
+    "source/css/*.css",
+    "source/css/*.map",
+    "source/js/*.js",
+    "source/fonts/*.woff",
+    "source/fonts/*.woff2",
+    "source/img/*.svg",
+    "source/img/*.png"
+  ], {base: "./source"})
+    .pipe(gulp.dest("build"))
+}
+
+exports.build = build;
+
 exports.default = gulp.series(
   styles, server, watcher
 );
