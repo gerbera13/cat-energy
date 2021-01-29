@@ -53,9 +53,9 @@
 
   .nav__wrapper {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
   }
 
   .nav__header--border {
@@ -65,6 +65,11 @@
   .nav__logo {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .nav__title {
@@ -116,6 +121,10 @@
       .nav__main-nav {
         display: block;
       }
+
+      .nav-2 {
+        display: none;
+      }
     }
 
     .nav__header--border {
@@ -153,6 +162,10 @@
   .header {
     padding: 60px 110px 29px 110px;
     font-size: 18px;
+
+    .nav-2 {
+      display: none;
+    }
 
     .nav__header--border {
       border-bottom: none;
