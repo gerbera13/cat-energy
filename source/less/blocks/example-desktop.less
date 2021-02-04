@@ -15,8 +15,12 @@
         flex-direction: row;
         justify-content: space-around;
 
+        .example:before {
+          border-top: none;
+        }
+
         .bc {
-          padding-bottom: 116px;
+          padding-bottom: 61px;
 
           .wrapper {
             padding-bottom: 30px;
@@ -114,6 +118,18 @@
         display: none;
       }
     }
+
+    .slider {
+      padding-left: 0;
+    }
+  }
+
+  .alive-example__compare {
+    grid-template-columns: auto 428px auto;
+  }
+
+  .alive-example__compare-right {
+    margin-right: 24px;
   }
 }
 

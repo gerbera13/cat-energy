@@ -28,25 +28,34 @@ body {
   --font-family: "Arial", sans-serif;
 }
 
+.relative {
+  position: relative;
+}
+
 @desktop: 1440px;
 
 .container {
-  width: 100%;
+  width: 280px;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .mini-container {
-    max-width: 610px;
-    width: 610px;
-    margin: auto;
+    max-width: 768px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 708px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1440px) {
   .container {
     max-width: 1400px;
-    width: 1200px;
+    width: 1220px;
   }
 
   .mini-container {

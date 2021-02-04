@@ -93,7 +93,7 @@
   }
 
   .example__subtitle {
-    .offset(20px; 0);
+    .offset(20px 0; 0);
     font-size: 36px;
     font-weight: normal;
   }
@@ -102,7 +102,6 @@
     font-family: "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    padding: 0 20px;
     margin: 0;
   }
 
@@ -198,11 +197,11 @@
 .alive-example__compare-right {
   font-size: 16px;
   text-align: center;
-  margin-left: 67px;
+  margin-left: 30px;
 }
 
 .alive-example__compare-left {
-  margin-right: 67px;
+  margin-right: 30px;
 }
 
 .wrapper {
@@ -247,34 +246,58 @@
 }
 
 @media (min-width: 768px) {
+  .alive-example {
+    background-color: white;
+
+    .ab {
+      position: absolute;
+      height: 472px;
+      background-color: #eaeaea;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  .example-wrapper {
+    position: relative;
+
+    .example:before {
+      content: "";
+      position: absolute;
+      border-top: 1px solid rgba(230, 230, 230, 1);
+      width: 200vw;
+      top: 0;
+      left: -100vw;
+    }
+  }
+
+
   .example {
     background-color: white;
-    border-top: 1px solid rgba(230, 230, 230, 1);
+
 
     .example__block {
       display: flex;
       flex-direction: row;
-      padding-right: 30px;
     }
 
     .example__subtitle {
       font-size: 60px;
-      padding: 30px;
     }
 
     .example__aside {
-
       grid-area: aside;
       text-align: right;
-      font-size: 14px;
-      padding-top: 30px;
+      font-size: 20px;
+      padding-top: 10px;
+      margin: 0;
     }
 
     .example__box {
       line-height: 37px;
       grid-template-columns: 1fr 1fr 2fr;
       grid-template-areas: "weight1 weight2 . aside";
-      padding-left: 30px;
+      padding-top: 0;
     }
 
     .example__weight h3 {
@@ -291,8 +314,9 @@
 
     .example__lead {
       font-size: 16px;
-      padding: 40px 30px;
+      padding: 40px 0;
       line-height: 24px;
+      width: 97%;
     }
 
     .example__weight {
@@ -318,32 +342,30 @@
     position: relative;
 
     .slider {
-      padding-left: 20px;
+      padding-left: 24px;
     }
 
     .alive-example__compare-right {
       font-size: @font;
       border-bottom: 1px solid lightgrey;
+      margin-left: 37px;
     }
 
     .alive-example__compare-left {
       text-align: left;
       font-size: @font;
       border-bottom: 1px solid lightgrey;
-      margin: 0 184px 0 20px;
+      margin: 0 97px 0 24px;
     }
   }
 
-  .container .example-wrapper .bc {
+  .example-wrapper .bc {
     position: relative;
     padding-bottom: 70px;
+    padding-right: 0;
+    padding-left: 0;
 
-    .ab {
-      position: absolute;
-      height: 472px;
-      background-color: #eaeaea;
-      bottom: 0;
-      width: 100%;
-    }
+
   }
+
 }

@@ -126,7 +126,7 @@
     border-bottom: none;
 
     h1 {
-      margin-bottom: 78px;
+      margin-bottom: 91px;
     }
   }
 
@@ -138,10 +138,20 @@
 
       li {
         width: 50%;
-        padding: 20px;
         margin-bottom: 25px;
         display: flex;
+
       }
+
+      li:nth-child(2n+1) {
+        padding-right: 30px;
+        padding-left: 0;
+      }
+
+      li:nth-child(2n) {
+        padding-left: 30px;
+      }
+
 
       .container__list-show {
         background-color: white;
@@ -155,13 +165,13 @@
       }
 
       .container__list-lead {
-        padding: 0 40px 30px 40px;
-        gap: 34px;
+        padding: 0 30px 40px 30px;
+        gap: 0;
         display: flex;
         flex-direction: column;
         background: rgba(242, 242, 242, 1);
         width: 100%;
-        margin-top: 67px;
+        margin-top: 115px;
 
 
         h2 {
@@ -170,6 +180,7 @@
 
         table {
           font-size: 16px;
+          padding-bottom: 27px;
 
           td {
             border-bottom: 1px solid lightgrey;
@@ -204,7 +215,7 @@
 
       .container__show {
         border: 2px solid rgba(242, 242, 242);
-        margin-top: 67px;
+        margin-top: 115px;
 
         .container__show-wrap {
           padding: 45px 40px 30px 40px;
