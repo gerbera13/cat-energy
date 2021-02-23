@@ -51,19 +51,19 @@
       }
 
       @media (min-resolution: 2dppx) {
-        background-image: url("/../../img/index-background-desktop2@2x.png ");
+        background-image: url("/../../img/index-background-desktop2@2x.png");
         background-size: 320px auto;
       }
 
       @media (min-width: @desktop) {
-        background-image: url("../../img/index-background-desktop1.png ");
+        background-image: url("../../img/index-background-desktop1.png");
         background-position: 50% -2px;
         height: 696px;
       }
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/index-background-desktop1@2x.png ");
-        background-size: 1440px auto;
+      @media (min-width: @desktop) and (min-resolution: 2dppx) {
+        background-image: url("../../img/index-background-desktop1@2x.png");
+        background-size: 720px auto;
       }
     }
   }
